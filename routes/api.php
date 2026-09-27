@@ -13,5 +13,6 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
-
-
+Route::get('/hello', function () {
+    return response()->json(['message' => 'Hello, API!']);
+});
